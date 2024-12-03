@@ -7,20 +7,26 @@
     <link rel="stylesheet" href="src/style.css"/>
 </head>
 <body>
-   <h1>Welcome to the Ultimate AI Soup Recipe Generator!</h1> 
+    <div class="container">
+    <header>
+   <h1>Welcome to the Ultimate AI Soup Recipe Generator!</h1>
+    </header> 
    <form>
 <input type="text" 
-placeholder="Enter the flavor, main ingredient, or from what region you want for a soup recipe"
+placeholder="What kind of soup do you want to make?"
 autofocus
-required/>
+required
+class="instructions" />
 
-<input type="submit"/>
-<div>
+<input type="submit" class="submit-button"/>
+   </form>
+<div class="recipe">
+    
     The recipe will go here
 </div>
-</form>
    <footer>This was coded by Amber Croyl, <a href="https://github.com/AmberShea" target="_blank"> on GitHub</a>, 
     and hosted on <a href="https://ultimate-soup-recipe-generator.netlify.app/" target="_blank">Netlify</a></footer>
    <script src="src/index.js"></script>
+    </div>
 </body>
 </html>
