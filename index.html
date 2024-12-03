@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Soup Recipe Generator</title>
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css"/>
 </head>
 <body>
@@ -17,7 +18,9 @@
 placeholder="What kind of soup do you want to make?"
 autofocus
 required
-class="instructions" />
+autocomplete="off"
+class="instructions"
+id="user-instructions" />
 
 <input type="submit" class="submit-button"/>
    </form>
