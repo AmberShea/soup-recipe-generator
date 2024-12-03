@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Soup Recipe Generator</title>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/style.css"/>
 </head>
 <body>
@@ -11,7 +12,7 @@
     <header>
    <h1>Welcome to the Ultimate AI Soup Recipe Generator!</h1>
     </header> 
-   <form>
+   <form id="recipe-generator-form">
 <input type="text" 
 placeholder="What kind of soup do you want to make?"
 autofocus
@@ -20,9 +21,7 @@ class="instructions" />
 
 <input type="submit" class="submit-button"/>
    </form>
-<div class="recipe">
-    
-    The recipe will go here
+<div class="recipe" id="recipe">
 </div>
    <footer>This was coded by Amber Croyl, <a href="https://github.com/AmberShea" target="_blank"> on GitHub</a>, 
     and hosted on <a href="https://ultimate-soup-recipe-generator.netlify.app/" target="_blank">Netlify</a></footer>
