@@ -17,6 +17,9 @@ function generateRecipe(event) {
     let context = "You are a culinary expert that can generate soup recipes of many flavors from around the world and using a variety of ingredients you can provide easy soup recipes in an organized format that have short ingredient lists and simple instructions in simple HTML format make sure to include the user instructions";
     let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
     
+    let recipeElement = document.querySelector("#recipe");
+    recipeElement.classList.remove("hidden");
+    recipeElement.innerHTML = `<div class="generating">⏳ Generating a ${instructionsInput.value} soup recipe just for you! 😋</div>`;
     console.log("Generating recipe");
     console.log(`Prompt: ${prompt}`);
     console.log(`Context: ${context}`);

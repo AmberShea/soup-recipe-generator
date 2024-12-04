@@ -13,6 +13,8 @@
     <header>
    <h1>Welcome to the Ultimate AI Soup Recipe Generator!</h1>
     </header> 
+    <main>
+<div class="form-container">
    <form id="recipe-generator-form">
 <input type="text" 
 placeholder="What kind of soup do you want to make?"
@@ -24,11 +26,14 @@ id="user-instructions" />
 
 <input type="submit" class="submit-button"/>
    </form>
-<div class="recipe" id="recipe">
+   <div class="hint">i.e. tomato, tortilla, or Hungarian</div>
+</div>
+<div class="recipe hidden blink" id="recipe">
 </div>
    <footer>This was coded by Amber Croyl, <a href="https://github.com/AmberShea" target="_blank"> on GitHub</a>, 
     and hosted on <a href="https://ultimate-soup-recipe-generator.netlify.app/" target="_blank">Netlify</a></footer>
    <script src="src/index.js"></script>
     </div>
+
 </body>
 </html>
